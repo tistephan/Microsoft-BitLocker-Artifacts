@@ -1,0 +1,40 @@
+[
+    {
+        "title": "Windows-Installation",
+        "description": "Angaben zur Windows-Installation",
+        "artifact": [
+            "ComputerName","true","and",
+            "WindowsEdition","true","and",
+            "WindowsVersion","true","and",
+            "WindowsBuild","true","and",
+            "W10_Nutzer","true",""
+        ]
+    },
+    {
+        "title": "BitLocker-Datenträger",
+        "description": "Zusammenhang BitLocker und Datenträger",
+        "artifact": [
+            "EventID_145","true","and",
+            "EventID_768","true",""
+        ]
+    },
+    {
+        "title": "Microsoft BitLocker nicht verwendet",
+        "description": "Nachweis der Nicht-Verwendung",
+        "artifact": [
+            "Prefetch_BitLockerWizardElev.exe","false","and",
+            "Prefetch_manage-bde.exe","false","and",
+            "ConsoleHost_history.txt","false","and",
+            "BitLocker-Commandlets in PowerShell-Eventlog","false",""
+        ]
+    },
+    {
+        "title": "Recovery Key Textfile",
+        "description": "Findet Hinweise auf Wiederherstellungsschlüssel",
+        "artifact": [
+            "Recovery Key Textfile","true",""
+        ]
+    }    
+]
+
+

@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft/2019-09/schema",
+  "title": "Artifact Rule",
+  "type": "object",
+  "required": ["title", "description", "condition"],
+  "properties":
+  {
+    "title":
+    {
+      "type": "string"
+    },
+    "description":
+    {
+      "type": "string"
+    },
+    "artifact":
+    {
+      "type": "array",
+      "required": ["name", "value"],
+      "minItems": 1,
+      "items": {
+        "name": "string",
+        "value": "string",
+        "operation": "string"
+      }
+    }
+  }
+}

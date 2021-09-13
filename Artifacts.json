@@ -1,0 +1,164 @@
+[
+    {
+        "title": "ComputerName",
+        "description": "Von Registry auslesen",
+        "type": "Registry",
+        "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Control\\ComputerName\\ComputerName",
+        "value": "ComputerName"
+    },
+    {
+        "title": "WindowsEdition",
+        "description": "Von Registry auslesen",
+        "type": "Registry",
+        "path": "HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+        "value": "ProductName"
+    },
+    {
+        "title": "WindowsVersion",
+        "description": "Von Registry auslesen",
+        "type": "Registry",
+        "path": "HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+        "value": "DisplayVersion"
+    },
+    {
+        "title": "WindowsBuild",
+        "description": "Von Registry auslesen",
+        "type": "Registry",
+        "path": "HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+        "value": "CurrentBuild"
+    },
+    {
+        "title": "W10_Nutzer",
+        "description": "Von Registry auslesen",
+        "type": "Registry",
+        "path": "HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+        "value": "RegisteredOwner"
+    },
+    {
+        "title": "Recovery Key Textfile",
+        "description": "Liest Datei BitLocker-Wiederherstellungsschlüssel*.txt aus",
+        "type": "File",
+        "path": "C:\\Users\\ < U S E R N A M E > \\Desktop",
+        "value": "Recovery Key",
+        "pattern begin": "ssel:",
+        "pattern end": "Falls der obige Bezeichner"
+    },
+    {
+        "title": "EventID_768",
+        "description": "Verschüsselung BitLocker-Volume gestartet",
+        "type": "Event Log",
+        "path": "Microsoft-Windows-BitLocker-API/Management",
+        "value": "768",
+        "pattern begin": "BitLocker encryption was started for volume ",
+        "pattern end": " algorithm."
+    },
+    {
+        "title": "EventID_796",
+        "description": "Softwarebasierte Verschlüsselung verwendet",
+        "type": "Event Log",
+        "path": "Microsoft-Windows-BitLocker-API/Management",
+        "value": "796",
+        "pattern begin": "software-based encryption to protect volume ",
+        "pattern end": "."
+    },
+    {
+        "title": "EventID_145",
+        "description": "NTFS-Volume-, Datenträger-Informationen",
+        "type": "Event Log",
+        "path": "Microsoft-Windows-Ntfs/Operational",
+        "value": "145",
+        "pattern begin": "Allgemeine Volumedaten:",
+        "pattern end": "Max. akzeptable "
+    },
+    {
+        "title": "Prefetch_BitLockerWizardElev.exe",
+        "description": "Ausführung BitLocker-Assistent prüfen",
+        "type": "File",
+        "path": "C:\\Windows\\Prefetch",
+        "value": "BITLOCKERWIZARDELEV*.pf",
+        "pattern begin": "",
+        "pattern end": ""
+    },
+    {
+        "title": "Prefetch_manage-bde.exe",
+        "description": "Ausführung manage-bde prüfen",
+        "type": "File",
+        "path": "C:\\Windows\\Prefetch",
+        "value": "MANAGE-BDE*.pf",
+        "pattern begin": "",
+        "pattern end": ""
+    },
+    {
+        "title": "ConsoleHost_history.txt",
+        "description": "BitLocker-Commandlets in Historie finden",
+        "type": "File",
+        "path": "C:\\Users\\ < U S E R N A M E > \\AppData\\Roaming\\Microsoft\\Windows\\PowerShell\\PSReadLine",
+        "value": "ConsoleHost_history.txt",
+        "pattern begin": "-BitLocker",
+        "pattern end": ""
+    },
+    {
+        "title": "BitLocker-Verschlüsselung gestartet",
+        "description": "",
+        "type": "Event Log",
+        "path": "Microsoft-Windows-BitLocker-API/Management",
+        "value": "768",
+        "pattern begin": "BitLocker encryption was started for volume ",
+        "pattern end": " algorithm."
+    },
+    {
+        "title": "BitLocker-Entschlüsselung gestartet",
+        "description": "",
+        "type": "Event Log",
+        "path": "Microsoft-Windows-BitLocker-API/Management",
+        "value": "770",
+        "pattern begin": "BitLocker decryption was started for volume ",
+        "pattern end": " ."
+    },
+    {
+        "title": "BitLocker-Keyprotector erstellt",
+        "description": "",
+        "type": "Event Log",
+        "path": "Microsoft-Windows-BitLocker-API/Management",
+        "value": "775",
+        "pattern begin": "A BitLocker key protector was created ",
+        "pattern end": " ."
+    },
+    {
+        "title": "BitLocker-Schutz entfernt",
+        "description": "",
+        "type": "Event Log",
+        "path": "Microsoft-Windows-BitLocker-API/Management",
+        "value": "778",
+        "pattern begin": "The BitLocker volume ",
+        "pattern end": " was reverted to an unprotected state."
+    },
+    {
+        "title": "BitLocker-Schutz entfernt",
+        "description": "",
+        "type": "Event Log",
+        "path": "Microsoft-Windows-BitLocker-API/Management",
+        "value": "778",
+        "pattern begin": "The BitLocker volume ",
+        "pattern end": " was reverted to an unprotected state."
+    },
+    {
+        "title": "Kennwort von BitLocker-Volume geändert",
+        "description": "",
+        "type": "Event Log",
+        "path": "Microsoft-Windows-BitLocker-API/Management",
+        "value": "826",
+        "pattern begin": "The password ",
+        "pattern end": " was changed"
+    },
+    {
+        "title": "BitLocker-Commandlets in PowerShell-Eventlog",
+        "description": "BitLocker-Commandlets ausgeführt",
+        "type": "Event Log",
+        "path": "Microsoft-Windows-PowerShell/Operational",
+        "value": "",
+        "pattern begin": "",
+        "pattern end": ""
+    }
+]
+

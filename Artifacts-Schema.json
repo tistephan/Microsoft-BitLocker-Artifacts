@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft/2019-09/schema",
+  "title": "Microsoft BitLocker Forensic Artifacts",
+  "type": "object",
+  "required": ["title", "description", "path", "value"],
+  "properties":
+  {
+    "title":
+    {
+      "type": "string"
+    },
+    "description":
+    {
+      "type": "string"
+    },
+    "type":
+    {
+      "type": "string"
+    },
+    "path":
+    {
+      "type": "string"
+    },
+    "value":
+    {
+      "type": "string"
+    },
+    "pattern begin":
+    {
+      "type": "string"
+    },
+    "pattern end":
+    {
+      "type": "string"
+    },
+    "Amt":
+    {
+      "type": "string"
+    }
+  }
+}
